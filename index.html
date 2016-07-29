@@ -2,40 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CSS Responsive Grid Challenge</title>
+  <title>Star Wars Responsive Challenge</title>
 
   <!-- Responsive viewport tag, tells small screens that it's responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Normalize.css, a cross-browser reset file -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/float-grid.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+  <link rel="stylesheet" href="styles/float-grid.css">
+
 </head>
 <body>
-  <main>
+		<!-- NEED HELP ON THIS ONE -->
 
-    <div class="row">
-      <div class="col-3">
-        <div class="box orange">3 columns</div>
-      </div>
-      <div class="col-3">
-        <div class="box blue">3 columns</div>
-      </div>
-      <div class="col-3">
-        <div class="box green">3 columns</div>
-      </div>
-      <div class="col-3">
-        <div class="box black">3 columns</div>
-      </div>
-    </div>
+<!--	<div class="row">
+		<div class="col-12">
+			<div class="header"><img src="images/space.png" cover>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="header">
+		<div class="row">
+			<div class="col-12">
+				<div class="headline">
+					<h1>Star Wars Characters</h1>
+					<p>Incomplete list</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row"> <!-- First row of cards -->
+
+		<!-- CARDS NOT ROTATING CORRECTLY -->
+
+		<div class="col-4">     
+			<div class="card">        
+				<img class="photo" src="images/rey_square.png" cover />
+					<h3 class="name">Ray</h3>
+					<p class="desc">Protagonist, from Tatooine</p>  
+			</div>    
+		</div>
+
+		<div class="col-4">     
+			<div class="card">        
+				<img class="photo" src="images/finn_square.png" cover />
+					<h3 class="name">Finn</h3>
+					<p class="desc">Storm Trooper, befriends Ray</p>  
+			</div>    
+		</div>
+
+		<div class="col-4">     
+			<div class="card">        
+				<img class="photo" src="images/kylo_square.png" cover />
+					<h3 class="name">Kylo</h3>
+					<p class="desc">Main villain, or is he?</p>
+			</div>    
+		</div>
+
+	</div> <!-- 1st row close -->
+
+	<div class="row"> <!-- 2nd row of cards -->
+
+		<div class="col-4">     
+			<div class="card">        
+				<img class="photo" src="images/poe_square.png" cover />
+					<h3 class="name">Poe</h3>
+					<p class="desc">Neutral pilot</p>  
+			</div>    
+		</div>
+
+		<div class="col-4">     
+			<div class="card">        
+				<img class="photo" src="images/chewbacca_square.png" cover />
+					<h3 class="name">Chewbacca</h3>
+					<p class="desc">A great first mate</p>  
+			</div>    
+		</div>
+
+		<div class="col-4">     
+			<div class="card">        
+				<img class="photo" src="images/yoda_square.png" cover />
+					<h3 class="name">Yoda</h3>
+					<p class="desc">Wise old Jedi master</p>  
+			</div>    
+		</div>
+
+	</div> <!-- 2nd row close -->
 
 
-    <div class="row"><h2>This row should get 3 equal width columns, each a different color</h2></div>
-
-    <div class="row"><h2>This row should get 2 equal width columns, each a different color</h2></div>
-
-    <div class="row"><h2>This row should get a single 12-col column</h2></div>
-
-  </main>
 </body>
 </html>
